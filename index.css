@@ -1,7 +1,27 @@
 /* <style> */
+/* @font-face {
+	font-family: "Outfit-Bold";
+	src: url("fonts/Outfit-Bold.ttf");
+}
+@font-face {
+	font-family: "Outfit-Regular";
+	src: url("fonts/Outfit-Regular.ttf");
+} */
+/* outfit-regular - latin */
 @font-face {
 	font-family: "Outfit";
-	src: local(Outfit);
+	font-style: normal;
+	font-weight: 400;
+	src: local(""), url("fonts/outfit-v4-latin-regular.woff2") format("woff2"),
+		url("fonts/outfit-v4-latin-regular.woff") format("woff");
+}
+/* outfit-700 - latin */
+@font-face {
+	font-family: "Outfit";
+	font-style: normal;
+	font-weight: 700;
+	src: local(""), url("fonts/outfit-v4-latin-700.woff2") format("woff2"),
+		url("fonts/outfit-v4-latin-700.woff") format("woff");
 }
 .attribution {
 	font-size: 11px;
@@ -24,7 +44,6 @@ body {
 #qrCodeComponent {
 	background-color: white;
 	text-align: center;
-	font-family: "Outfit";
 	border-radius: 20px;
 	width: 285px;
 	padding: 15px;
@@ -34,11 +53,13 @@ body {
 	/* Vertical - needs container with flex! */
 	align-self: center;
 }
-#qrCodeComponent h1 {
+#qrCodeComponent h2 {
+	font-family: "Outfit";
 	color: hsl(218, 44%, 22%);
 }
 #qrCodeComponent p {
 	color: hsl(220, 15%, 55%);
+	font-family: "Outfit";
 	font-size: 15px;
 }
 #qrCodeComponent img {
