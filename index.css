@@ -37,7 +37,7 @@ body {
 	background-color: white;
 	text-align: center;
 	border-radius: 20px;
-	width: 285px;
+	width: 295px;
 	padding: 15px;
 	/* Centering */
 	/* Horizontal */
@@ -45,14 +45,20 @@ body {
 	/* Vertical - needs container with flex! */
 	align-self: center;
 }
-#qrCodeComponent h2 {
-	font-family: "Outfit";
+#qrCodeComponent h1 {
 	color: hsl(218, 44%, 22%);
+	font-family: "Outfit";
+	font-weight: 700;
+	margin-left: 3%;
+	margin-right: 3%;
+	font-size: x-large;
 }
 #qrCodeComponent p {
 	color: hsl(220, 15%, 55%);
 	font-family: "Outfit";
-	font-size: 15px;
+	font-weight: 400;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 #qrCodeComponent img {
 	border-radius: 15px;
